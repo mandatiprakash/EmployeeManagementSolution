@@ -39,7 +39,7 @@ namespace EmployeeManagement.Api.Controllers
         public async Task<IActionResult> BulkCreate([FromBody] IEnumerable<EmployeeCreateDto> dtos)
         {
             await _employeeService.BulkCreateAsync(dtos);
-            return Ok(new { message = "Bulk insert successful insert" });
+            return Ok(new { message = "Bulk insert successful insert insert" });
         }
 
         [HttpPut("{id}")]
